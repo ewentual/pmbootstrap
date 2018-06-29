@@ -1,4 +1,4 @@
-# Kernel config based on: arch/arm/configs/(CHANGEME!)
+# Kernel config based on: arch/arm/configs/lineageos_nicki_defconfig
 
 pkgname="linux-sony-nicki"
 pkgver=3.4.0

@@ -1,4 +1,4 @@
-# Kernel config based on: arch/arm/configs/(CHANGEME!)
+# Kernel config based on: arch/arm/configs/lineageos_nicki_defconfig
 
 pkgname="linux-sony-nicki"
 pkgver=3.4.0
@@ -22,10 +22,10 @@ source="
 	$pkgname-$_commit.tar.gz::https://github.com/ewentual/${_repository}/archive/${_commit}.tar.gz
 	$_config
 	00_fix_return_address.patch
-	0001-fix-video-argb-setting.patch
-	kgsl_iommu_sync_lock.patch
+	01_fix_video_argb_setting.patch
 	02_mdss_fb_refresh_rate.patch
-	psmouse_base.patch
+	03_kgsl_iommu_sync_lock.patch
+	04_psmouse_base.patch
 	compiler-gcc6.h
 "
 builddir="$srcdir/${_repository}-${_commit}"

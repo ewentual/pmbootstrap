@@ -7,7 +7,7 @@ url="https://postmarketos.org"
 license="MIT"
 arch="noarch"
 options="!check"
-depends="postmarketos-base linux-sony-nicki mkbootimg mesa-dri-swrast mdss-fb-init-hack msm-fb-refresher"
+depends="postmarketos-base linux-sony-nicki mkbootimg mesa-dri-swrast mdss-fb-init-hack msm-fb-refresher mesa-dri-freedreno"
 makedepends="devicepkg-dev"
 source="deviceinfo 90-android-touch-dev.rules screen-workaround.sh fb.modes pointercal"
 

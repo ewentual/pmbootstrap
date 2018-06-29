@@ -18,13 +18,13 @@ build() {
 package() {
 	devicepkg_package $startdir $pkgname
 	install -D -m644 "$srcdir"/90-android-touch-dev.rules \
-	"$pkgdir"/etc/udev/rules.d/90-android-touch-dev.rules
+		"$pkgdir"/etc/udev/rules.d/90-android-touch-dev.rules
 	install -D -m644 "$srcdir"/screen-workaround.sh \
-	"$pkgdir"/etc/profile.d/screen-workaround.sh
+		"$pkgdir"/etc/profile.d/screen-workaround.sh
 	install -D -m644 "$srcdir"/fb.modes \
-	"$pkgdir"/etc/fb.modes
+		"$pkgdir"/etc/fb.modes
 	install -D -m644 "$srcdir"/pointercal \
-	"$pkgdir"/etc/pointercal
+		"$pkgdir"/etc/pointercal
 }
 
 sha512sums="ca821636f50ad0991ce24aa25edd6b961be747941de234d5190d08dc4962815ade591a5fd648ce6476512d37f7373ab4b2d3ff76d6783af81eaa66e487c14dde  deviceinfo

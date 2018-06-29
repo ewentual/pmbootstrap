@@ -16,7 +16,7 @@ HOSTCC="${HOSTCC#${CROSS_COMPILE}}"
 
 # Source
 _repository="postmarket_android_kernel_sony_msm8x27"
-_commit="0394cd811723fc611f5a2ff99aa83cfc21ed342f"
+_commit="ed98b19fca4a7f5abeffa2418f63e428ee22e55a"
 _config="config-${_flavor}.${arch}"
 source="
 	$pkgname-$_commit.tar.gz::https://github.com/ewentual/${_repository}/archive/${_commit}.tar.gz
@@ -77,7 +77,7 @@ package() {
 	fi
 }
 
-sha512sums="a6c4ef4d68b9be449ab1f99483e1f34b07fa341a18a20f75fb460ea538823fec1c31a671dd25bbe00c90f95326a16e4008dee5d6e524377948347a8697654ecd  linux-sony-nicki-0394cd811723fc611f5a2ff99aa83cfc21ed342f.tar.gz
+sha512sums="b5ce85204917f43b155627da3b8e19a606ca83c3b3c40941e703af6ceedf54248847f464b2e6d3a027fc6d4500ec668e54c70e5a6b49da296ba00b82887fbd1f  linux-sony-nicki-ed98b19fca4a7f5abeffa2418f63e428ee22e55a.tar.gz
 0bcd0fd7ff602967cba2372e9fda3d32cbb83a8f45aae137f4b5caa5ce6b60504747e004c98f0cd763068c54715d84b606e7cf01cc9b2338ad6b50a81a2d751e  config-sony-nicki.armhf
 ea1d3b5a234fa565e3c1a792de48f4fc4e6023d281d303c8e319c7ef28edc5739ab0e4dea0139a41f0a5c7d03e27921ccaa214fd0ac5c72245a094ce60128864  00_fix_return_address.patch
 e3083c260ed9c4fc0d83f43106700b6173876dbfae072f6e6696ac6785a4dc17771fbcb3e21601e04ed29a11bf0f7a2a09ad549375e0c34cea245c7f2e2bcbbd  0001-fix-video-argb-setting.patch
